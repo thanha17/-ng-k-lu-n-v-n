@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colHoTro = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.deTaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cbbKhoa = new System.Windows.Forms.ToolStripComboBox();
             this.cbbNganh = new System.Windows.Forms.ToolStripComboBox();
@@ -38,14 +40,9 @@
             this.lblTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.deTaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.maDeTaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDeTaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhómThucHienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colHoTro = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deTaiBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,18 +52,26 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maDeTaiDataGridViewTextBoxColumn,
-            this.tenDeTaiDataGridViewTextBoxColumn,
-            this.nhómThucHienDataGridViewTextBoxColumn,
             this.colHoTro});
             this.dataGridView1.DataSource = this.deTaiBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 66);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(821, 416);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // colHoTro
+            // 
+            this.colHoTro.HeaderText = "HoTro";
+            this.colHoTro.Name = "colHoTro";
+            this.colHoTro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colHoTro.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // deTaiBindingSource
+            // 
+            this.deTaiBindingSource.DataMember = "DeTai\r\n";
             // 
             // menuStrip1
             // 
@@ -175,47 +180,12 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(347, 98);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(84, 29);
             this.guna2Button1.TabIndex = 29;
             this.guna2Button1.Text = "guna2Button1";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // winDataSet2
-            // 
-            // 
-            // deTaiBindingSource
-            // 
-            this.deTaiBindingSource.DataMember = "DeTai\r\n";
-            // 
-            // deTai__TableAdapter
-            // 
-            // 
-            // maDeTaiDataGridViewTextBoxColumn
-            // 
-            this.maDeTaiDataGridViewTextBoxColumn.DataPropertyName = "MaDeTai";
-            this.maDeTaiDataGridViewTextBoxColumn.HeaderText = "MaDeTai";
-            this.maDeTaiDataGridViewTextBoxColumn.Name = "maDeTaiDataGridViewTextBoxColumn";
-            // 
-            // tenDeTaiDataGridViewTextBoxColumn
-            // 
-            this.tenDeTaiDataGridViewTextBoxColumn.DataPropertyName = "TenDeTai";
-            this.tenDeTaiDataGridViewTextBoxColumn.HeaderText = "TenDeTai";
-            this.tenDeTaiDataGridViewTextBoxColumn.Name = "tenDeTaiDataGridViewTextBoxColumn";
-            // 
-            // nhómThucHienDataGridViewTextBoxColumn
-            // 
-            this.nhómThucHienDataGridViewTextBoxColumn.DataPropertyName = "NhómThucHien";
-            this.nhómThucHienDataGridViewTextBoxColumn.HeaderText = "NhómThucHien";
-            this.nhómThucHienDataGridViewTextBoxColumn.Name = "nhómThucHienDataGridViewTextBoxColumn";
-            // 
-            // colHoTro
-            // 
-            this.colHoTro.HeaderText = "HoTro";
-            this.colHoTro.Name = "colHoTro";
-            this.colHoTro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colHoTro.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // FGiangVien_SupportTopic
             // 
@@ -228,14 +198,14 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FGiangVien_SupportTopic";
             this.Text = "FGiangVien_SupportTopic";
             this.Load += new System.EventHandler(this.FGiangVien_SupportTopic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTaiBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.deTaiBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

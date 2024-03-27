@@ -18,11 +18,7 @@ namespace Winform_Project
             InitializeComponent();
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void container(object form)
         {
             if(guna2Panel_container.Controls.Count > 0) { guna2Panel_container.Controls.Clear(); }
@@ -47,10 +43,7 @@ namespace Winform_Project
             }
         }
 
-        private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
 
         private void FGiangVien_Load(object sender, EventArgs e)
@@ -105,14 +98,8 @@ namespace Winform_Project
             container(new FGiangVien_Thesis_Accept());
         }
 
-        private void guna2ShadowForm1_Load(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void lblTenGiangVien_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -55,16 +55,17 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Tomato;
-            this.label9.Location = new System.Drawing.Point(16, 60);
+            this.label9.Location = new System.Drawing.Point(11, 39);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 29);
+            this.label9.Size = new System.Drawing.Size(145, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "Danh sách đề tài";
             // 
             // guna2Button1
             // 
             this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 30;
+            this.guna2Button1.BorderRadius = 19;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -72,17 +73,15 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(208)))), ((int)(((byte)(194)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1257, 873);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button1.Location = new System.Drawing.Point(838, 567);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(160, 63);
+            this.guna2Button1.Size = new System.Drawing.Size(107, 41);
             this.guna2Button1.TabIndex = 24;
             this.guna2Button1.Text = "Thêm đề tài";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cbbKhoa,
@@ -92,12 +91,15 @@
             this.cbbTheLoai});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1430, 37);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(953, 25);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // cbbKhoa
             // 
+            this.cbbKhoa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbKhoa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbKhoa.Items.AddRange(new object[] {
             "Công nghệ thông tin",
             "Thiết kế đồ họa",
@@ -109,11 +111,14 @@
             "Ngôn ngữ Anh",
             "Ngôn ngữ Trung"});
             this.cbbKhoa.Name = "cbbKhoa";
-            this.cbbKhoa.Size = new System.Drawing.Size(300, 33);
+            this.cbbKhoa.Size = new System.Drawing.Size(201, 23);
             this.cbbKhoa.Text = "Khoa";
+            this.cbbKhoa.Click += new System.EventHandler(this.cbbKhoa_Click);
             // 
             // cbbNganh
             // 
+            this.cbbNganh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbNganh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbNganh.Items.AddRange(new object[] {
             "Công nghệ thông tin",
             "Thiết kế đồ họa",
@@ -125,39 +130,49 @@
             "Ngôn ngữ Anh",
             "Ngôn ngữ Trung"});
             this.cbbNganh.Name = "cbbNganh";
-            this.cbbNganh.Size = new System.Drawing.Size(300, 33);
+            this.cbbNganh.Size = new System.Drawing.Size(201, 23);
             this.cbbNganh.Text = "Ngành";
+            this.cbbNganh.Click += new System.EventHandler(this.cbbNganh_Click);
             // 
             // cbbNamHoc
             // 
+            this.cbbNamHoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbNamHoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbNamHoc.Items.AddRange(new object[] {
             "2020 - 2021",
             "2021 - 2022",
             "2022 - 2023",
             "2023 - 2024"});
             this.cbbNamHoc.Name = "cbbNamHoc";
-            this.cbbNamHoc.Size = new System.Drawing.Size(121, 33);
+            this.cbbNamHoc.Size = new System.Drawing.Size(82, 23);
             this.cbbNamHoc.Text = "Năm học";
+            this.cbbNamHoc.Click += new System.EventHandler(this.cbbNamHoc_Click);
             // 
             // cbbHocKy
             // 
+            this.cbbHocKy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbHocKy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbHocKy.Items.AddRange(new object[] {
             "Kỳ 1",
             "Kỳ 2",
             "Kỳ 3"});
             this.cbbHocKy.Name = "cbbHocKy";
-            this.cbbHocKy.Size = new System.Drawing.Size(121, 33);
+            this.cbbHocKy.Size = new System.Drawing.Size(82, 23);
             this.cbbHocKy.Text = "Học kỳ";
+            this.cbbHocKy.Click += new System.EventHandler(this.cbbHocKy_Click);
             // 
             // cbbTheLoai
             // 
+            this.cbbTheLoai.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbTheLoai.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbTheLoai.Items.AddRange(new object[] {
             "Game\t",
             "Kinh tế",
             "Giải trí"});
             this.cbbTheLoai.Name = "cbbTheLoai";
-            this.cbbTheLoai.Size = new System.Drawing.Size(121, 33);
+            this.cbbTheLoai.Size = new System.Drawing.Size(82, 23);
             this.cbbTheLoai.Text = "Thể loại";
+            this.cbbTheLoai.Click += new System.EventHandler(this.cbbTheLoai_Click);
             // 
             // gvDeTai
             // 
@@ -166,7 +181,6 @@
             this.gvDeTai.AllowUserToResizeColumns = false;
             this.gvDeTai.AllowUserToResizeRows = false;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvDeTai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.gvDeTai.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -193,7 +207,8 @@
             this.gvDeTai.DefaultCellStyle = dataGridViewCellStyle8;
             this.gvDeTai.EnableHeadersVisualStyles = true;
             this.gvDeTai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gvDeTai.Location = new System.Drawing.Point(21, 171);
+            this.gvDeTai.Location = new System.Drawing.Point(14, 111);
+            this.gvDeTai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gvDeTai.Name = "gvDeTai";
             this.gvDeTai.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -211,7 +226,7 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
             this.gvDeTai.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gvDeTai.RowTemplate.Height = 28;
-            this.gvDeTai.Size = new System.Drawing.Size(1396, 671);
+            this.gvDeTai.Size = new System.Drawing.Size(931, 436);
             this.gvDeTai.TabIndex = 26;
             this.gvDeTai.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gvDeTai.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -260,15 +275,16 @@
             // 
             // FGiangVien_ThesisTopics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1430, 950);
+            this.ClientSize = new System.Drawing.Size(953, 618);
             this.Controls.Add(this.gvDeTai);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FGiangVien_ThesisTopics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FGiangVien_ThesisTopics";

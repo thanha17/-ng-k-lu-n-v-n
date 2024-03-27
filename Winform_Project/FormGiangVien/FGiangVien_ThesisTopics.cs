@@ -97,10 +97,35 @@ namespace Winform_Project
                 fgiangVien_ThesisTopics_Add.txtSoLuong.Text = gvDeTai.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
                 fgiangVien_ThesisTopics_Add.btnThem.Text = "Sửa";
 /*                fgiangVien_ThesisTopics_Add.btnThem.Click += Edit;
-*/                this.Hide();
+*/              this.Hide();
                 fgiangVien_ThesisTopics_Add.ShowDialog();
                 this.Show();
             }
+        }
+
+        private void cbbKhoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbNganh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbNamHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbHocKy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbTheLoai_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Winform_Project.ClassDoiTuong
 {
-    internal class SinhVien:ConNguoi
+    public class SinhVien : ConNguoi
     {
         private string khoa;
         private string nganh;
